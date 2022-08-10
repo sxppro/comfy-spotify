@@ -1,7 +1,108 @@
-@import url("https://comfy-themes.github.io/Spicetify/Comfy/app.css");
+@import url('https://comfy-themes.github.io/Spicetify/Comfy/app.css');
 
 /*/ ENABLE THIS LINE FOR HOVERED PANELS
 
 .Root__nav-bar {position: absolute;width: 40px;opacity: 0;bottom: 0;left: 0;top: 0;z-index: 1;}nav.Root__nav-bar:hover {position: inherit;width: 225px;opacity: 1;transition: visibility 5s, opacity 0.5s linear;}.LayoutResizer__resize-bar {cursor: none;}.Root__top-bar {opacity: 0;transition: visibility 5s, opacity 1s linear;}.Root__top-bar:hover {transition-delay: 0.5s;opacity: 1;transition: visibility 5s, opacity 0.5s linear;}.main-topBar-container {-webkit-padding-end: 32px;padding: 16px 85px;padding-inline-end: 32px;max-width: none;}aside[aria-label='Friend Activity']:hover {position: inherit;width: var(--buddy-feed-width);opacity: 1;transition: visibility 5s, opacity 0.5s linear;left: 0;}aside[aria-label='Friend Activity'] {position: absolute;width: 65px;opacity: 0;bottom: 0;left: -30px;top: 0;z-index: 1;}
 
 ENABLE THIS LINE FOR HOVERED PANELS /*/
+
+/* Play button state colours */
+.encore-dark-theme .encore-bright-accent-set {
+  --background-highlight: var(--spice-play-button-active);
+  --background-press: var(--spice-play-button-active);
+  --background-base: var(--spice-play-button);
+}
+
+/* Track name colour */
+.encore-dark-theme,
+.encore-dark-theme .encore-base-set {
+  --text-base: var(--spice-track-text);
+}
+
+/* Chips colour */
+.encore-dark-theme .encore-inverted-light-set {
+  --background-highlight: var(--spice-play-button-active);
+}
+
+/* Add button transitions on hover */
+:root button {
+  transition-duration: 0.25s;
+}
+:root button > span {
+  transition-duration: 0.25s;
+}
+
+/* Remove underlines on links */
+:root a {
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+/* Track progress bar */
+:root
+  .Root__now-playing-bar
+  .playback-bar
+  .playback-progressbar
+  > div
+  > div
+  > div
+  > div {
+  background-image: linear-gradient(
+    to right,
+    #a770ef 30%,
+    #cf8bf3 60%,
+    #fdb99b 90%,
+    transparent 100%
+  );
+}
+
+/* Track progress bar background */
+.progress-bar {
+  --bg-color: rgba(9, 34, 93, 0.3);
+}
+
+/* Play button top bar border radius */
+:root .Root__top-bar header button > span[class^='ButtonInner'] {
+  border-radius: var(--border-radius);
+}
+
+/* Play button main border radius */
+:root
+  .Root__main-view
+  section
+  .main-actionBar-ActionBarRow
+  > div
+  > button
+  > span {
+  border-radius: var(--border-radius);
+}
+
+/* Play button search result grid border radius */
+:root button > span[class^='ButtonInner'] {
+  border-radius: var(--border-radius);
+}
+
+/* Add translucency to playlist top bar */
+.main-topBar-background {
+  background-color: transparent !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Improve sidebar component opacity */
+:root .Root__nav-bar ul.main-navBar-entryPoints {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+:root
+  .Root__nav-bar
+  .main-rootlist-rootlist
+  .os-content
+  > ul[tabindex='0']
+  > div
+  > div:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-trackList-trackListRow:hover:not(.main-trackList-disabled)
+  .main-trackList-rowTitle {
+  color: var(--spice-text) !important;
+}
