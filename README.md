@@ -1,11 +1,33 @@
+# Custom Comfy Theme for Spotify ☺️️
+
+## Inspiration
+
+Main colours based on Spiceitfy Sleek community theme - 'Deep' 
+
+## Preview
+
+![Screenshot of custom Comfy theme for Spotify](media/preview.png)
+
+## Changes
+
+**Added colour & size transitions**
+
+![Hovering over playlist play button transitions its colour and size](media/hover.gif)
+
+**Added translucency to playlist top bar**
+
+![Playlist top bar with translucency](media/topbar.png)
+
+Many quality of life changes:
+
+* Changed background colour of progress bar
+* Changed and additional 3rd colour stop to progress bar gradient
+* Removed underlines on links
+
 ### ✅ Supported -> Spicetify 2.11.1, Spotify 1.1.90.
 ---
 
-![Banner](https://comfy-themes.github.io/Spicetify/banner.png)
-
----
-
-![Preview](https://comfy-themes.github.io/Spicetify/Comfy/assets/preview.png)
+![Banner](media/banner.png)
 
 ### 📥 Automatic Installation
 ---
