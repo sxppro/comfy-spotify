@@ -28,11 +28,7 @@ Many quality of life changes:
 ### ✅ Supported -> Spicetify 2.11.1, Spotify 1.1.90.
 ---
 
-<<<<<<< HEAD
 ![Banner](media/banner.png)
-=======
-![Preview](https://comfy-themes.github.io/Spicetify/Comfy/preview/preview.png)
->>>>>>> upstream/main
 
 ### 📥 Automatic Installation
 
